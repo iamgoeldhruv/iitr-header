@@ -248,13 +248,15 @@
        
        
        
-       if(a.style.display!="block")
+       if(a.style.display != "block")
        {
         a.style.display="block";
        }
        else{
         a.style.display="none";
         z.style.display="none";
+        b.style.display="none";
+        c.style.display="none";
         
        }
       
@@ -262,29 +264,37 @@
 
        
     };
+    var b=document.querySelector(".side-submenu1");
     function myfunction2()
     {
-        var b=document.querySelector(".side-submenu1");
+        
         
          
 
        
        if(b.style.display!="block")
        {
-        z.style.display="none";
+        // z.style.display="none";
         
         
         
 
         b.style.display="block";
+        c.style.display ="none";
+
        }
+       
+        
+      
+       
        else{
         b.style.display="none";
        }
     }
+    var c=document.querySelector(".side-submenu2");
     function myfunction3()
     {
-        var c=document.querySelector(".side-submenu2");
+        
        
         
        
@@ -296,6 +306,7 @@
 
         c.style.display="block";
        }
+       
        else{
         c.style.display="none";
        }
